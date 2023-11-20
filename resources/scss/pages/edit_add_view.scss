@@ -1,0 +1,21 @@
+@use '../helpers/variables' as *;
+
+// Edit View Styling
+.update-view, .add-view {
+  .alert {
+    display: flex;
+    align-items: center;
+    button {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .form-floating>label {
+    padding-left: 1.35rem;
+    font-weight: 500;
+  }
+  .form-floating>.form-control:not(:placeholder-shown)~label::after {
+    inset: 1rem 0.5rem;
+  }
+}

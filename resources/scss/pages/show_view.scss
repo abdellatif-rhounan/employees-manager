@@ -1,0 +1,48 @@
+@use '../helpers/variables' as *;
+
+// Show View Styling
+.show-view {
+  .alert {
+    display: flex;
+    align-items: center;
+    button {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .info-box {
+    margin-bottom: 17px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        align-items: center;
+        background-color: $bg_second;
+        list-style-type: none;
+        margin-bottom: 14px;
+        padding: {
+          left:15px;
+          top:7px;
+          bottom:7px;
+        }
+        i {
+          font-size: 25px;
+        }
+        .box-data {
+          display: flex;
+          flex-direction: column;
+          margin-left: 12px;
+          span:nth-child(1) {
+            color: rgb(90, 90, 90);
+          }
+        }
+      }
+    }
+  }
+}

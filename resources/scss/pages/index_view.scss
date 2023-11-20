@@ -1,0 +1,20 @@
+@use '../helpers/variables' as *;
+
+// Index View Styling
+.index-view {
+  .alert {
+    display: flex;
+    align-items: center;
+    button {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .table {
+    width: 100%;
+    th, td {
+      background: $bg_second;
+    }
+  }
+}
